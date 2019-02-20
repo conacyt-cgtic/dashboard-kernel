@@ -8,7 +8,7 @@ import org.junit.Test;
 public class CalculatorTest {
     private final static Logger LOG = Logger.getLogger(CalculatorTest.class);
     
-    private Calculator service = new Calculator();
+    //private Calculator service = new Calculator();
     
     @Test
     public void testCalc() {
@@ -41,8 +41,14 @@ public class CalculatorTest {
         assertTrue(check(90000, 406799));
     }
     private boolean check(int n, long m) {
-        long calc = service.computeFactLen(n);
+        long calc = computeFactLen(n);
         LOG.info("Calculando los digitos para factorial de "+n+": " + calc + " (se esperaban: "+m+")"); 
         return calc==m;
+    }
+    public long computeFactLen(int n) {
+        double res = 1.0;
+        for(int i=1; i<=n; i++)
+            res = res + Math.log10(i);
+        return (long)res;
     }
 }
