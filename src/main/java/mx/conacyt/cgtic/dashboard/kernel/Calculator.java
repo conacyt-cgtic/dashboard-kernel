@@ -8,3 +8,4 @@ public class Calculator {
         return (long)res;
     }
 }
+//ok
