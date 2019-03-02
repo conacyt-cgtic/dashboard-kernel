@@ -8,7 +8,7 @@ import org.junit.Test;
 public class CalculatorTest {
     private final static Logger LOG = Logger.getLogger(CalculatorTest.class);
     
-    //private Calculator service = new Calculator();
+    private Calculator service = new Calculator();
     
     @Test
     public void testCalc() {
