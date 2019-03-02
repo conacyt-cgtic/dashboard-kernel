@@ -45,10 +45,4 @@ public class CalculatorTest {
         LOG.info("Calculando los digitos para factorial de "+n+": " + calc + " (se esperaban: "+m+")"); 
         return calc==m;
     }
-    public long computeFactLen(int n) {
-        double res = 1.0;
-        for(int i=1; i<=n; i++)
-            res = res + Math.log10(i);
-        return (long)res;
-    }
 }
