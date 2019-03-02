@@ -41,7 +41,7 @@ public class CalculatorTest {
         assertTrue(check(90000, 406799));
     }
     private boolean check(int n, long m) {
-        long calc = computeFactLen(n);
+        long calc = service.computeFactLen(n);
         LOG.info("Calculando los digitos para factorial de "+n+": " + calc + " (se esperaban: "+m+")"); 
         return calc==m;
     }
