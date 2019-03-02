@@ -38,7 +38,7 @@ public class CalculatorTest {
         assertTrue(check(60000, 260635));
         assertTrue(check(70000, 308760));
         assertTrue(check(80000, 357507));
-        assertTrue(check(90000, 4067990));
+        assertTrue(check(90000, 406799));
     }
     private boolean check(int n, long m) {
         long calc = service.computeFactLen(n);
