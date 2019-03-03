@@ -5,11 +5,20 @@ import static org.junit.Assert.assertTrue;
 import org.apache.log4j.Logger;
 import org.junit.Test;
 
+/**
+ * rst
+ * 
+ * @author garellano
+ *
+ */
 public class CalculatorTest {
     private final static Logger LOG = Logger.getLogger(CalculatorTest.class);
     
     private Calculator service = new Calculator();
     
+    /**
+     * info extra
+     */
     @Test
     public void testCalc() {
         assertTrue(check(100, 158));
