@@ -15,7 +15,7 @@ public class Calculator {
      * xyz
      * 
      * @param n
-     * @return
+     * @return long
      */
     public long computeFactLen(int n) {
         LOG.info("Calculating fact len for:: "+n); 
