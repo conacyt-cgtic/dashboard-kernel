@@ -16,6 +16,12 @@ public class CalculatorTest {
     
     private Calculator service = new Calculator();
     
+    @Test
+    public void testDivide() {
+        double res = service.divide(5, 2);
+        assertTrue(res==2.5);
+        LOG.info("El resultado fue: "+res);
+    }
     /**
      * info extra
      */
