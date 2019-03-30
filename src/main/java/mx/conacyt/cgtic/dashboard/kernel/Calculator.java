@@ -24,4 +24,12 @@ public class Calculator {
             res = res + Math.log10(i);
         return (long)res;
     }
+    
+    public double divide(int a, int b) {
+        if(b==0) {
+            return 0;
+        } else {
+            return (double)a/b;
+        }
+    }
 }
