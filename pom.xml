@@ -7,6 +7,7 @@
     <artifactId>kernel</artifactId>
     <version>0.0.1-SNAPSHOT</version>
 
+    
     <name>Dashboard Kernel</name>
     <description>Dashboard Kernel</description>
 
@@ -15,7 +16,7 @@
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
         <java.version>1.8</java.version>
     </properties>
-    <!-- -->
+    
     <repositories>
         <repository>
             <id>nexus.cgtic.conacyt.mx</id>
