@@ -26,8 +26,11 @@ public class Calculator {
     }
     
     public double divide(int a, int b) {
+        if(a==0 && b==0) {
+            throw new RuntimeException("El resultado es: INDETERMINADO");
+        }
         if(b==0) {
-            return 0;
+            throw new RuntimeException("El resultado es: INFINITO");
         } else {
             return (double)a/b;
         }
